@@ -32,7 +32,7 @@ Git clone the repository.
 From the root directory, run:
 
 ```bash
-pip install -e .[dev]
+pip install -e ".[dev]"
 ```
 
 Allows to run tests and linting with pytest and flake8.
@@ -61,6 +61,8 @@ pip install .
 from pokeapi import PokeAPI
 
 api = PokeAPI()
+pokemon = api.get_pokemon(name="pikachu")
+print(f"Name: {pokemon.name}, Height: {pokemon.height}, Weight: {pokemon.weight}")
 ```
 
 ### Pokemon Methods
