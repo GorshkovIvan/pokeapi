@@ -130,14 +130,18 @@ src/
 │   └── exceptions.py         # Custom exceptions
 │
 tests/                        # Test directory
+├── __init__.py
 ├── integration/             # Integration tests
 │   ├── test_pokeapi.py     # SDK interface tests
 │   ├── test_pokemon_client.py    # Pokemon client tests
 │   └── test_generation_client.py # Generation client tests
 │
+├── requirements.txt           # Project dependencies
 ├── setup.py                # Package installation configuration
 ├── pyproject.toml         # Project build configuration
 ├── README.md              # Project documentation
+├── .gitignore             # Git ignore file
+├── pytest.ini             # Pytest configuration
 └── LICENSE               # MIT License
 ```
 
@@ -193,6 +197,16 @@ tests/                        # Test directory
    - Pydantic models are used for data validation
    - This ensures that the data returned from the API is valid and type-safe
    - It also allows for easy validation of the data in the tests
+
+6. **Constants, Errors and URLs**
+   - Constants are defined in `constants.py`
+   - Errors are defined in `exceptions.py`
+   - URLs are defined in `constants.py`
+
+7. **Installation and Versioning**
+   - The project uses `pip` for installation
+   - The project uses `pyproject.toml` for build configuration
+   - The project uses `setup.py` for package installation
 
 ### Development Tools
 
