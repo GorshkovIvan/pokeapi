@@ -96,6 +96,7 @@ gen_list = api.list_generations(limit=10, offset=0)  # Returns list of resources
 - `pokemon_id/generation_id`: int - Resource ID
 - `limit`: int - Number of results per page
 - `offset`: int - Page offset
+- If a single parameter is supplied to a get_generation or get_pokemon method, it is treated as an id.
 
 ## Official Documentation
 
